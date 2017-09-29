@@ -1,17 +1,16 @@
 using MvvmCross.Platform.IoC;
+using MvvmCross.Core.ViewModels;
+using MvvmTask.Core.ViewModels;
 
 namespace MvvmTask.Core
 {
-    public class App : MvvmCross.Core.ViewModels.MvxApplication
+    public class App : MvxApplication
     {
         public override void Initialize()
         {
-            CreatableTypes()
-                .EndingWith("Service")
-                .AsInterfaces()
-                .RegisterAsLazySingleton();
-
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            base.Initialize();
+            CreatableTypes().EndingWith("Service").AsInterfaces().RegisterAsLazySingleton();
+            RegisterAppStart<MainViewModel>();
         }
     }
 }
