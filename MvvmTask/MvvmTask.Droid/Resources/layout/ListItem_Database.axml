@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/linearLayout1"
+    p1:layout_margin="5dp">
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout2"
+        p1:weightSum="7"
+        p1:layout_margin="5dp">
+        <TextView
+            p1:text="ID"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/dbItemID"
+            p1:layout_weight="1"
+            p1:textSize="@dimen/textSize" />
+        <TextView
+            p1:text="Name"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/dbItemName"
+            p1:layout_weight="2"
+            p1:textSize="@dimen/textSize" />
+        <TextView
+            p1:text="Description"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:singleLine="false"
+            p1:minLines="3"
+            p1:id="@+id/dbItemDescription"
+            p1:layout_weight="2"
+            p1:textSize="@dimen/textSize" />
+    </LinearLayout>
+    <TextView
+        local:MvxBind="Text Updated"
+        p1:text="UPD:"
+        p1:layout_width="wrap_content"
+        p1:layout_height="match_parent"
+        p1:id="@+id/dbItemDT"
+        p1:layout_marginLeft="5dp" />
+</LinearLayout>

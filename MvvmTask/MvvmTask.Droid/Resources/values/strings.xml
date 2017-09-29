@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ApplicationName">MvvmTask</string>
+   <string name="ApplicationName">EGOTaskTretyakov</string>
+  <string name="app_name">Smooth Scrolling</string>
+  <string name="to_top">To Top</string>
+  <string name="to_bottom">To Bottom</string>
+  <string name="item_string">Item %1$d</string>
+  <string name="fastscroller_track">FastScroller track</string>
+  <string name="fastscroller_handle">FastScroller handle</string>
+
+  <string name="buttonRotate">Rotate 90CW</string>
+  <string name="buttonFlipH">Flip Horizontal</string>
+  <string name="buttonFlipV">Flip Vertical</string>
+  <string name="buttonAddData">Add data</string>
+  <string name="buttonGalleryEdit">Edit</string>
+  <string name="buttonGalleryRefresh">Refresh</string>
+  <string name="buttonGallerySave">Save to Gallery</string>
+  <string name="buttonGalleryRemove">Remove</string>
 </resources>
